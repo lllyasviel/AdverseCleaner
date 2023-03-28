@@ -2,7 +2,7 @@
 
 The shortest ever code (**16 lines of Python codes**) to remove some [adversarial noise](https://arxiv.org/abs/1412.6572) from images.
 
-It does not even use deep learning.
+It does not even use deep learning. By applying the bilateral filter and guided filter multiple times to the input image, the code aims to remove the adversarial noise by reducing the magnitude of the perturbations. The bilateral filter is a smoothing filter that can reduce high-frequency noise, while the guided filter is a more sophisticated filter that can preserve edges while removing noise.
 
 And I personally think anisotropic filtering methods are more effective than training noise-removal neural networks because convolution operations are essentially non-anisotropic. 
 
